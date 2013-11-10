@@ -1,0 +1,13 @@
+# Upstart Configuration
+description "golang gdg dev server"
+author "mjason"
+start on (net-device-up and local-filesystems and runlevel [2345])
+stop on runlevel [016]
+respawn
+ 
+script
+ 
+chdir /home/deploy/gdg_dev
+exec /home/deploy/gdg_dev/main
+ 
+end script

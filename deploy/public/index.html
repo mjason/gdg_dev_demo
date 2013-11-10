@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>GDG</title>
+    <script src="/handlebars.min.js"></script>
+    <script src="/jquery-1.10.2.min.js"></script>
+    <link rel="stylesheet" href="/main.css">
+    <script id="entry-template" type="text/x-handlebars-template">
+      {{#each .}}
+        <img src={{image_path}}>
+      {{/each}}
+    </script>
+  </head>
+  <body>
+    <h1>GDG</h1>
+    <hr>
+  </body>
+  <script src="/controller.js"></script>
+</html>
